@@ -18,10 +18,6 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Playwright tests
       run: npx playwright test --project=chromium --workers=1 --grep @login
-    - uses: sidharthv96/playwright-report-action
-      if: always()
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}  
     - uses: actions/upload-artifact@v3
       if: always()
       with:
