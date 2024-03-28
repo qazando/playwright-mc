@@ -20,7 +20,7 @@ jobs:
       run: npx playwright test --project=chromium --workers=1 --grep @login
     - uses: sidharthv96/playwright-report-action
       with:
-           github-token: ${{ secrets.GITHUB_TOKEN }}  
+        github-token: ${{ secrets.GITHUB_TOKEN }}  
     - uses: actions/upload-artifact@v3
       if: always()
       with:
