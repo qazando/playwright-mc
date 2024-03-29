@@ -1,8 +1,7 @@
 name: Playwright Tests
 on:
-  pull_request:
+  push:
     branches: [ main, master, gh-pages ]
-  workflow_dispatch
 jobs:
   test:
     timeout-minutes: 60
