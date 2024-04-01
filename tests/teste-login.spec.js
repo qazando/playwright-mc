@@ -12,7 +12,7 @@ test('teste de login @login', async ({ page }) => {
   await page.getByRole('button', { name: 'OK' }).click();
 });
 
-test('teste de login @login-protegido', async ({ page }) => {
+test('teste de login @protegido', async ({ page }) => {
   const { email, password } = CredenciaisHelper.obterCredenciais();
 
   await page.goto('https://automationpratice.com.br/');
