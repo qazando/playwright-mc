@@ -1,8 +1,8 @@
-name: Playwright Tests
+name: Testes para disparos manuais
+
 on:
-  pull_request:
-    branches: [ main, master ]
-  workflow_dispatch: # Adicionando o gatilho workflow_dispatch
+  workflow_dispatch
+  
 jobs:
   test:
     timeout-minutes: 60
