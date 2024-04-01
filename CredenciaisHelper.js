@@ -22,8 +22,6 @@ export class CredenciaisHelper {
       } catch (error) {
         console.error('Erro ao ler o arquivo credentials.json:', error);
         // Fornecer valores padrão ou lançar um erro, conforme necessário
-        email = 'seu_email_padrao@example.com';
-        password = 'sua_senha_padrao';
       }
     }
 
