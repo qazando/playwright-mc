@@ -8,8 +8,8 @@ UTILIZAR PROTEÇÃO DE USUÁRIO:
 3 - Criar um arquivo no seu projeto chamado: credentials.json
 4 - Colocar o seu usuário e senha localmente nesse arquivo de credentials.json
 
-´
+'''
 {
  "email": "seuemail@gmail.com",
  "password": "sua senha"
-}´
+}'''
