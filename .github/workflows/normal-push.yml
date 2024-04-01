@@ -1,4 +1,4 @@
-name: Push Com Usuário Protegido
+name: Push Normal
 
 on:
   push:
@@ -8,11 +8,6 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-
-    env:
-      EMAIL: ${{ secrets.EMAIL }}
-      PASSWORD: ${{ secrets.PASSWORD }}
-
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
