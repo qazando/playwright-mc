@@ -17,7 +17,7 @@ test('Cadastro com email vazio', async ({ page }) => {
   await expect(page.getByText('O campo e-mail deve ser prenchido corretamente')).toBeVisible();
 });
 
-test('Cadastro com email inválido', async ({ page }) => {
+test('Cadastro com email inválido @cadastro', async ({ page }) => {
 
 });
 
