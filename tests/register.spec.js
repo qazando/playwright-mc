@@ -10,7 +10,11 @@ test('Cadastro com nome vazio', async ({ page }) => {
 });
 
 test('Cadastro com email vazio', async ({ page }) => {
-
+  await page.goto('https://automationpratice.com.br/register');
+  await page.locator('#user').fill('Teste Qazando')
+  await page.locator('#password').fill('123456')
+  await page.locator('#btnRegister').click()
+  await expect(page.getByText('O campo e-mail deve ser prenchido corretamente')).toBeVisible();
 });
 
 test('Cadastro com email inválido', async ({ page }) => {
