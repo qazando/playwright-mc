@@ -9,7 +9,7 @@ test('Cadastro com nome vazio', async ({ page }) => {
   await expect(page.getByText('O campo nome deve ser')).toBeVisible();
 });
 
-test('Cadastro com email vazio', async ({ page }) => {
+test('Cadastro com email vazio @login', async ({ page }) => {
   await page.goto('https://automationpratice.com.br/register');
   await page.locator('#user').fill('Teste Qazando')
   await page.locator('#password').fill('123456')
